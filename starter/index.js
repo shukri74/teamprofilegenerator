@@ -13,3 +13,44 @@ const render = require("./src/page-template.js");
 
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
 
+(function PromptUser(){
+
+    inquirer
+
+    .prompt([
+                
+    {
+        type: "input",
+        name: "name",
+        message: "Please type your name"
+},
+
+   {
+    type: "input",
+    name: "email",
+    message: "Please type your email"
+},
+
+   {
+    type: "input",
+    name: "id",
+    message: "Please type your ID"
+},
+
+   {
+    type: "input",
+    name: "name",
+    message: "Please type your name"
+},
+
+])
+    
+const {name, id, email, contact} = answers
+
+swith (contact){
+
+    
+}
+
+
+})();
