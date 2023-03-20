@@ -47,10 +47,6 @@ const render = require("./src/page-template.js");
     
 const {name, id, email, contact} = answers
 
-swith (contact){
-
-    
-}
 
 
 })();
