@@ -47,7 +47,7 @@ async function PromptUser(){
 
 {
     type: "input",
-    name: "officeNumber",
+    name: "OfficeNumber",
     when: (answers) => answers.role === "Manager",
     message: "Please type your office number"
 },
@@ -76,7 +76,7 @@ async function PromptUser(){
 switch(answers.role){
 
     case "Manager":
-        const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
+        const manager = new Manager(answers.name, answers.id, answers.email, answers.OfficeNumber);
         team.push(manager);
         break;
 
@@ -96,7 +96,7 @@ fs.existsSync(OUTPUT_DIR) ? null : fs.mkdirSync(OUTPUT_DIR);
 
 if(answers.confirm === true){
                 
-        PromptUser()
+        await PromptUser()
             
         }
 
