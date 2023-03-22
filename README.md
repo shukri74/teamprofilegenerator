@@ -12,3 +12,7 @@ Clone the repositry to youtr local machine and open the terminal and answer the 
 ## Usage
 
 MIT license
+
+  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
+
